@@ -33,7 +33,7 @@ img.bg {
   }
 
   .logincontainer {
-    background-image: url("background.jpg");
+    background-image: (cl_image_tag("background.jpg"));
     background-repeat: no-repeat;
     background-size: fill;
     background-position: center center;
