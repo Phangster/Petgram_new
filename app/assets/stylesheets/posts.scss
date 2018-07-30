@@ -35,10 +35,10 @@ img.bg {
   .logincontainer {
     background-image: url("background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: fill;
     background-position: center center;
-    height: 700px;
-    width: auto;
+    height: 1024px;
+    width: 100%;
     // background-position: 0 50px;
     // height: 100%;
   }
@@ -51,10 +51,10 @@ img.bg {
   .signupcontainer {
     background-image: url("background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: fill;
     background-position: center center;
-    height: 700px;
-    width: auto;
+    height: 1024px;
+    width: 100%;
   }
 
     .editcontainer h1 {
