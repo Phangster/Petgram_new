@@ -5,7 +5,6 @@ class User < ApplicationRecord
   acts_as_voter
 
   validates :user_name, presence: true, length: { minimum: 4, maximum: 16 }
-  validates :user_id, :notified_by_id, :post_id, :identifier, :notice_type, presence: true
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
