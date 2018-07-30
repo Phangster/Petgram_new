@@ -3,17 +3,77 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 img.bg {
-    height: 640px;
-    width: 640px;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
   }
 
+
   body {
-    background-color: #fafafa;
+    background-color: #ffebd5;
     font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    // background-image: url("background.jpg");
+    // background-position: 0 50px;
+    // background-repeat: repeat;
+    // background-size: cover;
+  }
+
+  .logincontainer h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .logincontainer {
     background-image: url("background.jpg");
-    background-position: 0 50px;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    height: 700px;
+    width: auto;
+    // background-position: 0 50px;
+    // height: 100%;
+  }
+
+  .signupcontainer h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .signupcontainer {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+    width: auto;
+  }
+
+    .editcontainer h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .editcontainer h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .editcontainer {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+    width: auto;
   }
   
 
@@ -27,18 +87,24 @@ img.bg {
   }
   
   .navbar-default {
-    background-color: #fff;
+    background-color: #A9A9A9;
     height: 54px;
     .navbar-nav li a {
       color: #125688;
+      font-size: 16px;
     }
   }
   
   .navbar-container {
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
   }
-  
+
+  .newpostcontainer h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
   /* ## POST CUSTOMISATIONS ## */
   
   .posts-wrapper {
@@ -76,9 +142,13 @@ img.bg {
       }
     }
     .image {
-      border-bottom: 1px solid #eeefef;
-      border-top: 1px solid #eeefef;
+      border-bottom: 2px solid #428bca;
+      border-top: 2px solid #428bca;
     }
+  }
+
+  .image .img-responsive {
+    margin: 10px auto;
   }
   
   .post-bottom {
@@ -183,7 +253,7 @@ img.bg {
   }
 
   .profile-header {
-    padding: 20px 0;
+    padding: 20px 80px 20px 0;
   }
   
   #avatar-image {
@@ -191,6 +261,7 @@ img.bg {
     height: 152px;
     width: 152px;
     border-radius: 50%;
+    border:5px solid #FF0080;
   }
   
   .user-name-and-follow {
@@ -202,13 +273,14 @@ img.bg {
   }
   
   .edit-button {
-    border-color: #818488;
-    color: #818488;
+    border-color: #007bff;
+    color: #007bff;
     margin-left: 20px;
   }
   
   .profile-bio {
     margin-top: 20px;
+    border: 1px solid #007bff;
   }
 
   .likes {
